@@ -1,0 +1,40 @@
+.post {
+    border-bottom: 1px solid #EBECED;
+    padding: 2rem 0;
+    &__pic {
+        width: 17.5rem;
+        height: 11rem;
+    }
+    &__descr {
+        padding: 0.5rem 1rem 0 2.5rem;
+    }   
+    &__descr__title {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+    &__descr__text {
+        p {
+            margin-top: 1rem;
+            &:nth-child(1) {
+                font-size: 0.875rem;
+                span {
+                    color: var(--color__main-grey);
+                    margin-left: 0.5rem;
+                }
+            }
+            &:nth-child(2) {
+                font-size: 0.75rem;
+                color: var(--color__main-green);
+                text-transform: uppercase;
+            }
+            &:nth-child(3) {
+                font-size: 0.875rem;
+                color: var(--color__main-grey);
+                svg {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -46,10 +46,26 @@ html,
 body {
 	min-height: 100%;
 	position: relative;
+	font-family: 'Roboto', 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--color__main-black);
 }
 
 body {
 	font-size: 1rem;
+}
+
+.mainpage {
+	flex-direction: column;
+	.header,
+	.footer {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+}
+
+main {
+	max-width: 100rem;
+	margin: 0 auto;
 }
 
 ul,
@@ -62,5 +78,20 @@ h3,
 h4,
 h5,
 h6 {
+	color: var(--color__secondary-black);
 	margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color__primary-black);
 }

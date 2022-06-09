@@ -1,0 +1,99 @@
+.home {
+    width: 75rem;
+    margin-top: 2.5rem;
+    &__container {
+
+    }
+    &__header {
+        width: 100%;
+    }
+    &__header-title {
+
+    }
+    &__header-btns {
+        position: relative;
+        left: 7rem;
+    }
+    &__header-btn:nth-child(2) {
+        margin-left: 1rem;
+    }
+    &__info {
+        width: 100%;
+        margin-top: 2.5rem;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        min-height: 25rem;
+        box-shadow: var(--main__shadow);
+    }
+    &__info-pic {
+        width: 50%;
+        height: 25rem;
+        border-radius: 6px 0 0 6px ;
+        background-image: url('/img/home/home-info-pic.png');
+        background-size: 100%;
+    }
+    &__info-descr {
+        width: 50%;
+        padding: 4rem 4rem 2rem;
+    }   
+    &__info-descr__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    &__info-descr__text {
+        margin-top: 5.5rem;
+        p {
+            margin-top: 1rem;
+            &:nth-child(1) {
+                font-size: 0.875rem;
+                span {
+                    color: var(--color__main-grey);
+                    margin-left: 0.5rem;
+                }
+            }
+            &:nth-child(2) {
+                font-size: 0.75rem;
+                color: var(--color__main-green);
+                text-transform: uppercase;
+            }
+            &:nth-child(3) {
+                font-size: 0.875rem;
+                color: var(--color__main-grey);
+                svg {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    &__nav {
+        width: 100%;
+        height: 5rem;
+        margin-top: 2rem;
+        background-color: var(--color__background-grey);
+        border-radius: 4px;
+    }
+    &__nav-wrapper {
+        margin-left: 2rem;
+    }
+    &__nav-title {
+        margin-right: 1rem;
+        font-weight: 500;
+    }
+    &__nav-link {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: var(--color__main-green);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__contact {
+        margin-right: 1rem;
+    }
+    &__contact-link {
+        margin: 0 1rem;
+        color: var(--color__secondary-black);
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}

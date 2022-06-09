@@ -1,0 +1,26 @@
+.menu {
+    position: relative;
+    list-style: none;
+    left: 3.5rem;
+    &__item {
+        height: 2rem;
+        margin-left: 2rem;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid var(--color__main-green);
+        }
+    }
+    &__arrow {
+        width: 0;
+        height: 0;
+        margin-left: 0.5rem;
+        border: 5px solid transparent;
+        border-top-color: var(--color__main-black);
+        border-bottom: 0;
+    }
+}

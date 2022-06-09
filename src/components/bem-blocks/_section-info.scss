@@ -1,0 +1,79 @@
+.info {
+    position: relative;
+    width: 75rem;
+    margin-top: 2.5rem;
+    &__container {
+
+    }
+    &__posts {
+        width: 50rem;
+        padding-right: 5rem;
+        border-right: 1px solid #EBECED;
+    }
+    &__posts-wrapper {
+        position: absolute;
+        right: 0;
+    }
+    &__posts-search {
+        position: relative;
+        width: 21rem;
+        padding: 1.2rem 0.5rem 1rem 3rem;
+        border: 1px solid #D7D8D9;
+        border-radius: 4px;
+        outline: none;
+    }
+    &__posts-icon {
+        position: absolute;
+        left: 1rem;
+        top: 1.2rem;
+    }
+    &__posts-title {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    &__posts-btns {
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+    &__posts-btn {
+        width: 16rem;
+    }
+    &__side {
+       width: 21.25rem;
+       margin-top: 3rem; 
+       margin-left: 3.5rem;
+    }
+    &__side-container {
+        padding-bottom: 1.5rem;
+        padding-top: 2.5rem;
+        ul {
+            padding-left: 1.5rem;
+            li {
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                margin-top: 1rem;
+                color: var(--color__main-green);
+                span {
+                    color: var(--color__secondary-black);
+                }
+            }
+        }
+        &:nth-child(1), &:nth-child(2) {
+            border-bottom: 1px solid #EBECED;
+        }
+        &:last-child {
+            padding-top: 0;
+            img {
+                position: relative;
+                left: -1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    &__side-title {
+        font-size: 1.5rem;
+        p {
+            margin-left: 1rem;
+        }
+    }
+}

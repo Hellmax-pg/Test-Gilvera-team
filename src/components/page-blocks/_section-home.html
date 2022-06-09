@@ -1,0 +1,78 @@
+<section class="home">
+    <div class="home__container flex --dir-col">
+        <div class="home__header flex --align-center --just-space">
+            <h3 class="home__header-title">
+                Company Name
+            </h3>
+            @@include("../bem-blocks/menu/_menu.html")
+            <div class="home__header-btns">
+                @@include("../bem-blocks/button/_button.html", {
+                    "class":{
+                    "bem__elem":"home__header-btn"
+                    },
+                    "type":"button",
+                    "text":"LOG IN"
+                })
+                @@include("../bem-blocks/button/_button.html", {
+                    "class":{
+                    "bem__elem":"home__header-btn"
+                    },
+                    "type":"button",
+                    "text":"GET STARTED"
+                })
+            </div>
+        </div>
+        <div class="home__info flex">
+            <div class="home__info-pic"></div>
+            <div class="home__info-descr">
+                <div class="home__info-descr__title">
+                    <p>TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement</p>
+                </div>
+                <div class="home__info-descr__text">
+                    <p>Danica Sergison <span> |  JUL 08, 2018</span></p>
+                    <p>Copyright, News, Open Source, Privacy</p>
+                    <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                        </svg>
+                         0</p>
+                </div>
+            </div>
+        </div>
+        <div class="home__nav flex --just-space --align-center">
+            <div class="home__nav-wrapper flex ">
+                <h5 class="home__nav-title">
+                    Tags:
+                </h5>
+                <a href="#" class="home__nav-link">
+                    Bitcoin
+                </a>
+                <a href="#" class="home__nav-link">
+                    Bittorent
+                </a>
+                <a href="#" class="home__nav-link">
+                    Irc
+                </a>
+                <a href="#" class="home__nav-link">
+                    News
+                </a>
+                <a href="#" class="home__nav-link">
+                    Privacy
+                </a>
+                <a href="#" class="home__nav-link">
+                    Programming
+                </a>
+                <a href="#" class="home__nav-link">
+                    Security
+                </a>
+            </div>
+            <div class="home__contact">
+                <a href="#" class="home__contact-link">
+                    Team
+                </a>
+                <a href="#" class="home__contact-link">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

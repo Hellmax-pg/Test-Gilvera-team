@@ -1,0 +1,41 @@
+.header {
+    height: 2.5rem;
+    background-color: var(--color__background-dark);
+    &__wrapper {
+        margin: 0 auto;
+        height: inherit;
+        max-width: 40rem;
+        font-size: 0.75rem;
+    }
+
+    &__item {
+        margin: 0 1rem;
+        p {
+            color: var(--color__main-grey);
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        &:nth-child(1) {
+            p {
+                color: var(--color__background-grey);
+            }
+        }
+    }
+    &__item-icon {
+        margin-right: 0.2rem;
+    }
+    &__item-text {
+
+    }
+    &__close {
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+    }
+    &__close-icon {
+        cursor: pointer;
+        @include btn_anim(1.05, 0.95)
+    }
+}

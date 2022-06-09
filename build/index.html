@@ -1,16 +1,137 @@
 <!DOCTYPE html>
-@@include('components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Easy-webdev-startpack v3.0",
-"description":"Gulp pack for easy html/php markup development",
-"keywords":"",
-"favicon":"img/favicons/favicon",
-})
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
 
 <body class="mainpage flex --align__center --just__space">
-	@@include('components/page-blocks/_header.html')
+	<header class="header">
+    <div class="header__wrapper flex --align-center --just__space">
+        <div class="header__item flex --align-center">
+            <svg class="header__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 21L12 2L1 21H23ZM11 18V16H13V18H11ZM11 14H13V10H11V14Z" fill="#FF8D00"/>
+            </svg>
+            <p class="header__item-text">You are not protected</p>
+        </div>
+        <div class="header__item flex --align-center">
+            <p class="header__item-text">Your IP Address: 107.3.176.194</p>
+        </div>
+        <div class="header__item flex --align-center">
+            <p class="header__item-text">Your ISP: Comcast Cable</p>
+        </div>
+        <div class="header__item flex --align-center">
+            <p class="header__item-text"><a href="#">Learn More ›</a></p>
+        </div>
+    </div>
+    <div class="header__close">
+        <svg class="header__close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#889099"/>
+        </svg>            
+    </div>
+</header>
+
 	<main class="main">
-		@@include('components/page-blocks/_section-home.html')
+		<section class="home">
+    <div class="home__container flex --dir-col">
+        <div class="home__header flex --align-center --just-space">
+            <h3 class="home__header-title">
+                Company Name
+            </h3>
+            <ul class="menu flex --align-center --just-space">
+    <li class="menu__item flex --align-center">
+        Why us <div class="menu__arrow"></div>
+    </li>
+    <li class="menu__item flex --align-center">
+        Vpn apps
+    </li>
+    <li class="menu__item flex --align-center">
+        Support <div class="menu__arrow"></div>
+    </li>
+    <li class="menu__item flex --align-center">
+        Resources <div class="menu__arrow"></div>
+    </li>
+</ul>
+            <div class="home__header-btns">
+                <button class="home__header-btn" type="button" name="@@name">LOG IN</button>
+                <button class="home__header-btn" type="button" name="@@name">GET STARTED</button>
+            </div>
+        </div>
+        <div class="home__info flex">
+            <div class="home__info-pic"></div>
+            <div class="home__info-descr">
+                <div class="home__info-descr__title">
+                    <p>TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement</p>
+                </div>
+                <div class="home__info-descr__text">
+                    <p>Danica Sergison <span> |  JUL 08, 2018</span></p>
+                    <p>Copyright, News, Open Source, Privacy</p>
+                    <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                        </svg>
+                         0</p>
+                </div>
+            </div>
+        </div>
+        <div class="home__nav flex --just-space --align-center">
+            <div class="home__nav-wrapper flex ">
+                <h5 class="home__nav-title">
+                    Tags:
+                </h5>
+                <a href="#" class="home__nav-link">
+                    Bitcoin
+                </a>
+                <a href="#" class="home__nav-link">
+                    Bittorent
+                </a>
+                <a href="#" class="home__nav-link">
+                    Irc
+                </a>
+                <a href="#" class="home__nav-link">
+                    News
+                </a>
+                <a href="#" class="home__nav-link">
+                    Privacy
+                </a>
+                <a href="#" class="home__nav-link">
+                    Programming
+                </a>
+                <a href="#" class="home__nav-link">
+                    Security
+                </a>
+            </div>
+            <div class="home__contact">
+                <a href="#" class="home__contact-link">
+                    Team
+                </a>
+                <a href="#" class="home__contact-link">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 		<section class="info">
 			<div class="info__container flex">
 				<div class="info__posts">
@@ -25,15 +146,117 @@
 					<h2 class="info__posts-title">
 						Recent posts
 					</h2>
-					@@loop('components/bem-blocks/posts/_posts.html', 'components/content/posts.json')
+					<article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-1.png" 
+    alt="posts-pic-1">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Derek Zimmer <span> |  JUL 25, 2018</span></p>
+            <p>Governments, Networking, Open Source, Privacy, Security</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article><article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-2.png" 
+    alt="posts-pic-2">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>How to get cheaper flights using a VPN</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Jayson <span> |  JUL 24, 2018</span></p>
+            <p>Guides</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article><article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-3.png" 
+    alt="posts-pic-3">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>Net Neutrality was repealed, but the fight is far from over</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Chris Miller <span> |  JUL 22, 2018</span></p>
+            <p>Governments, Net Neutrality, News</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article><article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-1.png" 
+    alt="posts-pic-1">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Derek Zimmer <span> |  JUL 25, 2018</span></p>
+            <p>Governments, Networking, Open Source, Privacy, Security</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article><article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-2.png" 
+    alt="posts-pic-2">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>How to get cheaper flights using a VPN</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Jayson <span> |  JUL 24, 2018</span></p>
+            <p>Guides</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article><article class="post flex">
+    <img 
+    class="post__pic"
+    src="img/posts/posts-pic-3.png" 
+    alt="posts-pic-3">
+    <div class="post__descr">
+        <div class="post__descr__title">
+            <p>Net Neutrality was repealed, but the fight is far from over</p>
+        </div>
+        <div class="post__descr__text">
+            <p>Chris Miller <span> |  JUL 22, 2018</span></p>
+            <p>Governments, Net Neutrality, News</p>
+            <p class="flex --align-center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75001 11.3334V10.5834H4.00001H3.41667V3.41669H12.5833V10.5834H8.18667H8.00365L7.8412 10.6677L4.75001 12.2719V11.3334Z" stroke="#889099" stroke-width="1.5"/>
+                </svg>
+                    0</p>
+        </div>
+    </div>
+</article>
 					<div class="info__posts-btns">
-						@@include("components/bem-blocks/button/_button.html", {
-							"class":{
-							"bem__elem":"info__posts-btn"
-							},
-							"type":"button",
-							"text":"OLDER POSTS"
-						})
+						<button class="info__posts-btn" type="button" name="@@name">OLDER POSTS</button>
 					</div>
 				</div>
 				<div class="info__side">
@@ -85,8 +308,11 @@
 			</div>
 		</section>
 	</main>
-	@@include('components/page-blocks/_footer.html')
-	@@include('components/page-blocks/_scripts.html')
+	<footer class="footer"></footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
 </body>
 
 </html>
