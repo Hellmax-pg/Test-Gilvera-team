@@ -1,0 +1,104 @@
+.warning {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    height: 2.5rem;
+    background-color: var(--color__background-dark);
+    &__wrapper {
+        margin: 0 auto;
+        height: inherit;
+        max-width: 40rem;
+        font-size: 0.75rem;
+    }
+    &__container {
+        &:nth-child(1) {
+            p {
+                &:nth-child(2) {
+                    color: var(--color__main-orange);
+                }
+            }
+        }
+    }
+    &__item {
+        margin: 0 1rem;
+        p {
+            color: var(--color__main-grey);
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    &__item-icon {
+        margin-right: 0.2rem;
+    }
+    &__close {
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+    }
+    &__close-icon {
+        cursor: pointer;
+        @include btn_anim(1.05, 0.95)
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767.5px) {
+    .warning {
+        height: 5rem;
+        &__wrapper {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+        &__container {
+            display: flex;
+            align-items: baseline;
+            height: 3rem;
+            &:nth-child(1) {
+                flex-direction: column;
+                justify-content: space-between;
+                p {
+                    &:nth-child(2) {
+                        color: var(--color__main-orange);
+                    }
+                }
+            }
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+                align-items: flex-end; 
+                justify-content: space-between;
+
+            }
+        }
+        &__item {
+            height: 1.5rem;
+            font-size: 0.65rem;
+            margin: 0;
+            p {
+                color: var(--color__main-grey);
+                a {
+                    margin-right: 1rem;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        &__item-icon {
+            margin-right: 0.2rem;
+        }
+        &__item-text {
+            width: 100%;
+        }
+        &__close {
+            position: absolute;
+            right: 0.5rem;
+            top: 0.75rem;
+        }
+        &__close-icon {
+            cursor: pointer;
+            @include btn_anim(1.05, 0.95)
+        }
+    }
+}

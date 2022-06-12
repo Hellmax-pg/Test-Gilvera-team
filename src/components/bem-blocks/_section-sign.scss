@@ -1,5 +1,5 @@
 .sign {
-    height: 50rem;
+    min-height: 50rem;
     margin: 0 -12.5rem;
     margin-top: 5rem;
     background: var(--main__gradient-dark);
@@ -10,6 +10,7 @@
     }
     &__container {
         margin: 5rem 0;
+        min-height: 25rem;
     }
     &__item {
         height: 21rem;
@@ -21,8 +22,9 @@
         border-radius: 6px;
         transition: all ease 0.3s;
         &:hover {
-            height: 110%;
-            cursor: pointer;
+            height: 23rem;
+            border: 4px solid var(--color__main);
+            border-radius: 4px;
         }
     }
     &__item-title {
@@ -32,7 +34,7 @@
     &__item-line {
         width: 1.5rem;
         height: 2px;
-        background-color: var(--color__main-green);
+        background-color: var(--color__main);
     }
     &__item-price {
         border-bottom: 1px solid #EBECED;
@@ -64,9 +66,6 @@
             margin-top: 0.5rem;
         }
     }
-    &__icons {
-
-    }
     &__icons-descr {
         color: var(--color__main-white);
     }
@@ -81,9 +80,93 @@
         font-size: 0.9rem;
         text-decoration: none;
         text-transform: uppercase;
-        color: var(--color__main-green);
+        color: var(--color__main);
         span {
             margin: 0 1rem;
+            svg {
+                path {
+                    fill: var(--color__main);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+    .sign {
+        width: 100%;
+        margin: 0;
+        margin-top: 5rem;
+        padding: 0 1rem;
+        &__title {
+            margin-top: 2.5rem;
+            text-align: center;
+        }
+        &__container {
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }   
+        &__item {
+            width: auto; 
+        }
+        &__icons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__nav {
+            margin: 1rem 0;
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767.5px) {
+    .sign {
+        width: 100%;
+        margin: 0;
+        margin-top: 5rem;
+        &__title {
+            font-size: 2.5rem;
+            margin-top: 2.5rem;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        &__container {
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }   
+        &__item {
+            width: 18rem;
+            padding: 3rem 1rem;
+            &:hover {
+                height: 21rem;
+                border: 4px solid var(--color__main-orange);
+                border-radius: 4px;
+            }
+        }
+        &__item-btn {
+            &:hover {
+                color: var(--color__main-white);
+                border: 1px solid var(--color__main-orange);
+                background: var(--main__gradient-orange);
+            }
+        }
+        &__icons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__icon {
+            height: 3rem;
+            width: 3rem;
+        }
+        &__nav {
+            margin: 1rem 0;
+            height: 3rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 }

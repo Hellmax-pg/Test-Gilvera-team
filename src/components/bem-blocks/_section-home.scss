@@ -1,22 +1,5 @@
 .home {
     width: 75rem;
-    margin-top: 2.5rem;
-    &__container {
-
-    }
-    &__header {
-        width: 100%;
-    }
-    &__header-title {
-
-    }
-    &__header-btns {
-        position: relative;
-        left: 7rem;
-    }
-    &__header-btn:nth-child(2) {
-        margin-left: 1rem;
-    }
     &__info {
         width: 100%;
         margin-top: 2.5rem;
@@ -53,7 +36,7 @@
             }
             &:nth-child(2) {
                 font-size: 0.75rem;
-                color: var(--color__main-green);
+                color: var(--color__main);
                 text-transform: uppercase;
             }
             &:nth-child(3) {
@@ -82,7 +65,7 @@
     &__nav-link {
         margin: 0 1rem;
         text-decoration: none;
-        color: var(--color__main-green);
+        color: var(--color__main);
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -95,5 +78,83 @@
         font-weight: 500;
         text-transform: uppercase;
         text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .home {
+        width: 100%;
+        &__info {
+            width: 42rem;
+            margin: 2.5rem auto;
+            border: 1px solid #D7D8D9;
+            border-radius: 0;
+            flex-direction: column;
+        }
+        &__info-pic {
+            width: 100%;
+        }
+        &__info-descr {
+            width: 100%;
+        }   
+        &__nav {
+            width: 100%;
+            border-radius: 0;
+        }
+        &__nav-wrapper {
+            margin-left: 1rem;
+        }
+        &__nav-link {
+            margin: 0 0.5rem;
+            font-size: 0.9rem;
+        }
+        &__contact {
+            margin-right: 0.5rem;
+        }
+        &__contact-link {
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767.5px) {
+    .home {
+        width: 100%;
+        padding: 0 1.5rem;
+        &__info {
+            width: 17rem;
+            margin: 0 auto;
+            margin-top: 3rem;
+            border-radius: 0;
+            flex-direction: column;
+        }
+        &__info-pic {
+            height: 11rem;
+            width: 100%;
+            border-radius: 0;
+        }
+        &__info-descr {
+            padding: 1.5rem 2rem 1rem 2rem;
+            width: 100%;
+        } 
+        &__info-descr__text {
+            margin-top: 1rem;
+        }     
+        &__nav {
+            display: none;
+        }
+        &__nav-wrapper {
+            margin-left: 1rem;
+        }
+        &__nav-link {
+            margin: 0 0.5rem;
+            font-size: 0.9rem;
+        }
+        &__contact {
+            margin-right: 0.5rem;
+        }
+        &__contact-link {
+            margin: 0 0.5rem;
+        }
     }
 }
