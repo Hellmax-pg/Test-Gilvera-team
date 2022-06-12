@@ -1,0 +1,86 @@
+.footer {
+    &__container {
+        max-width: 75rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "title title title title"
+                             "company programs legal about"
+                             "company learn . social";
+        grid-template-columns: 1fr, 1fr, 1fr, 3fr;
+        column-gap: 5rem;
+    }
+    &__title {
+        grid-area: title;
+        margin-top: 5.25rem;
+        margin-bottom: 3.5rem;
+    }
+    &__company {
+        grid-area: company;
+    }
+    &__programs {
+        grid-area: programs;
+    }
+    &__learn {
+        grid-area: learn;
+        position: relative;
+        top: -8.5rem;
+    }
+    &__legal {
+        grid-area: legal;
+    }
+    &__about {
+        grid-area: about;
+    }
+    &__social {
+        grid-area: social;
+    }
+    &__company-title,
+    &__programs-title,
+    &__learn-title,
+    &__legal-title,
+    &__about-title,
+    &__social-title {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+    &__company-item,
+    &__programs-item,
+    &__learn-item,
+    &__legal-item {
+        font-size: 0.9rem;
+        margin: 0.75rem 0;
+        a {
+            text-decoration: none;
+            color: var(--color__main-grey);
+        }
+    }
+    &__about-item {
+        font-size: 0.75rem;
+        margin: 0.75rem 0;
+        color: var(--color__main-grey);
+        &:nth-child(2) {
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+        }
+        &:nth-child(3) {
+            margin-top: 1.5rem;
+        }
+        &:nth-child(4) {
+            margin: 0;
+            margin-top: 1.5rem;
+        }
+        &:nth-child(5) {
+            margin: 0;
+        }
+        &:nth-child(6) {
+            margin: 1.5rem 0;
+        }
+    }
+    &__social-item {
+        margin-right: 2rem
+    }
+    &__social-icon {
+        @include btn_anim(1.1, 0.9);
+    }
+}
